@@ -29,8 +29,6 @@ const days = [
   'Saturday',
 ]
 
-document.getElementById('clock-app').innerHTML
-
 const dayOfWeek = currentTime.getDay()
 
 currentDayOfWeek = days[dayOfWeek]
@@ -45,10 +43,8 @@ const year = currentTime.getFullYear()
 
 const hour = currentTime.getHours()
 
-currentTime.setHours()
-
-console.log(currentTime.toLocaleDateString('en-US'))
-
 const currentDateFormat = `${currentDayOfWeek}, ${currentMonth} ${dayOfMonth} ${year}`
 
 document.body.innerHTML = `<h2> ${currentDateFormat} </h2>`
+
+console.log(document.getElementById('clock-app'))
