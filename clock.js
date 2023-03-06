@@ -1,4 +1,5 @@
 let currentTime = new Date()
+const body = document.body
 
 console.log(currentTime)
 
@@ -45,6 +46,6 @@ const hour = currentTime.getHours()
 
 const currentDateFormat = `${currentDayOfWeek}, ${currentMonth} ${dayOfMonth} ${year}`
 
-document.body.innerHTML = `<h2> ${currentDateFormat} </h2>`
-
-console.log(document.getElementById('clock-app'))
+const currentDateElement = document.createElement('h2')
+currentDateElement.innerHTML = `<h2> ${currentDateFormat} </h2>`
+body.append(currentDateElement)
