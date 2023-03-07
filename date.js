@@ -1,5 +1,5 @@
-let currentTime = new Date()
-const body = document.body
+export const currentTime = new Date()
+export const body = document.body
 
 console.log(currentTime)
 
@@ -32,7 +32,7 @@ const days = [
 
 const dayOfWeek = currentTime.getDay()
 
-currentDayOfWeek = days[dayOfWeek]
+const currentDayOfWeek = days[dayOfWeek]
 
 const month = currentTime.getMonth()
 
@@ -42,10 +42,8 @@ const dayOfMonth = currentTime.getDate()
 
 const year = currentTime.getFullYear()
 
-const hour = currentTime.getHours()
-
 const currentDateFormat = `${currentDayOfWeek}, ${currentMonth} ${dayOfMonth} ${year}`
 
-const currentDateElement = document.createElement('h2')
-currentDateElement.innerHTML = `<h2> ${currentDateFormat} </h2>`
+const currentDateElement = document.createElement('div')
+currentDateElement.innerHTML = `<div> ${currentDateFormat} </div>`
 body.append(currentDateElement)
