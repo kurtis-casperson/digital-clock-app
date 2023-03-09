@@ -1,0 +1,28 @@
+body {
+  background-color: #5f96d9c4;
+}
+
+#clock-app {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#app-description {
+  margin-top: 10%;
+  font-family: 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+#ticker {
+}
+
+#currentTimeElement {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}

@@ -1,12 +1,13 @@
 import { currentTime, body } from './date.js'
-// Add current time to the clock
 
+// Add current time to the clock
 const hour = currentTime.getHours()
 const minutes = currentTime.getMinutes()
 const seconds = currentTime.getSeconds()
 
 console.log(hour, minutes, seconds)
 
+// Should this be its own element?
 const ticker = document.createElement('ticker')
 ticker.id = 'ticker'
 ticker.innerHTML = '<div> : </div>'
@@ -35,5 +36,6 @@ const visibleInterval = setInterval(visibleTicker, 2000)
 const currentTimeFormat = `${hour} 
   ${minutes}  ${seconds}`
 const currentTimeElement = document.createElement('div')
+currentTimeElement.id = 'currentTimeElement'
 currentTimeElement.innerHTML = `<div> ${currentTimeFormat} </div>`
 body.append(currentTimeElement)

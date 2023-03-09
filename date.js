@@ -44,17 +44,24 @@ const dayOfMonth = currentTime.getDate()
 
 const year = currentTime.getFullYear()
 
+// Add switch statement to reduce code.  Useful for adding the Nth to an array of different values.
 const nthDayofMonth = (nthnumber) => {
   if (nthnumber > 3 && nthnumber < 21) return 'th'
+  switch (nthnumber % 10) {
+    case 1:
+      return 'st'
+    case 2:
+      return 'nd'
+    case 3:
+      return 'rd'
+    default:
+      return 'th'
+  }
 }
 
-const stDaysOfMonth = [1, 21, 31]
-
-const rdDaysOfMonth = []
-
-const thDaysOfMonth = []
-
-const currentDateFormat = `${currentDayOfWeek}, ${currentMonth} ${dayOfMonth} ${year}`
+const currentDateFormat = `${currentDayOfWeek}, ${currentMonth} ${dayOfMonth}${nthDayofMonth(
+  dayOfMonth
+)} ${year}`
 
 const currentDateElement = document.createElement('div')
 currentDateElement.innerHTML = `<div> ${currentDateFormat} </div>`
