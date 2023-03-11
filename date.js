@@ -63,6 +63,5 @@ const currentDateFormat = `${currentDayOfWeek}, ${currentMonth} ${dayOfMonth}${n
   dayOfMonth
 )} ${year}`
 
-const currentDateElement = document.createElement('div')
-currentDateElement.innerHTML = `<div> ${currentDateFormat} </div>`
-body.append(currentDateElement)
+const dateElement = document.getElementById('current-date')
+dateElement.textContent = currentDateFormat

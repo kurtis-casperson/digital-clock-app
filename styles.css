@@ -3,9 +3,9 @@ body {
 }
 
 #clock-app {
-  display: flex;
-  justify-content: center;
-  position: relative;
+  color: hwb(240 33% 29% / 0.841);
+  text-align: center;
+  margin-top: 5%;
 }
 
 #app-description {
@@ -18,10 +18,14 @@ body {
   margin-bottom: 10%;
 }
 
-#ticker {
+#current-time {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 50px;
 }
 
-#currentTimeElement {
+#current-date {
   display: flex;
   justify-content: center;
   position: relative;
