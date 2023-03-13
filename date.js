@@ -1,5 +1,5 @@
-export const currentTime = new Date()
-export const body = document.body
+const currentTime = new Date()
+const body = document.body
 
 console.log(currentTime)
 
