@@ -3,30 +3,31 @@ body {
 }
 
 #clock-app {
-  color: hwb(240 33% 29% / 0.841);
+  color: hwb(203 2% 58% / 0.771);
   text-align: center;
-  margin-top: 5%;
+  margin-top: 10%;
+  font-size: 50px;
 }
 
 #app-description {
-  margin-top: 10%;
   font-family: 'Trebuchet MS', sans-serif;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-bottom: 10%;
 }
 
 #current-time {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  font-size: 50px;
+  color: #053c61d6;
+  text-align: center;
+  font-size: 100px;
 }
 
 #current-date {
-  display: flex;
-  justify-content: center;
-  position: relative;
+  color: hwb(203 2% 58% / 0.771);
+  text-align: center;
+  margin-top: 0%;
+  font-size: 50px;
 }
