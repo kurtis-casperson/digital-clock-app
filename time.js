@@ -2,7 +2,7 @@
 
 const renderClock = () => {
   // new Date needs to be called becasue the current second needs to be called every second
-  // without it the date is only called once and there is no state. The state is static
+  // without it the new date the state is static
   const today = new Date()
   const hour = today.getHours()
   const minutes = today.getMinutes()
@@ -33,5 +33,3 @@ const renderClock = () => {
 }
 
 const secondsInterval = setInterval(renderClock, 1000)
-
-//  Why does new Date need to be created inside of the function
