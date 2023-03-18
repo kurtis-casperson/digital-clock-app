@@ -1,8 +1,4 @@
-// make the time up to date at all times
-
 const renderClock = () => {
-  // new Date needs to be called becasue the current second needs to be called every second
-  // without it the new date the state is static
   const today = new Date()
   const hour = today.getHours()
   const minutes = today.getMinutes()
