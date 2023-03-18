@@ -15,5 +15,5 @@ Access my project [here!](https://kurtis-casperson.github.io/digital-clock-app/)
 
 # Author
 
-Kurtis Casperson
+Hey I'm Kurtis Casperson!
 Connect with me! [LinkedIn](https://www.linkedin.com/in/kurtis-casperson/)
